@@ -6,6 +6,7 @@ sender = "0x0f14341A7f464320319025540E8Fe48Ad0fe5aec"
 evm_version = "london"
 optimizer = true
 optimizer_runs = 999999
+bytecode_hash = "none"
 
 [rpc_endpoints]
 arbitrum-goerli = "https://goerli-rollup.arbitrum.io/rpc"
