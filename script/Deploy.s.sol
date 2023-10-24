@@ -5,7 +5,7 @@ import {stdJson} from "forge-std/StdJson.sol";
 import {Script} from "forge-std/Script.sol";
 
 import {Common} from "./Common.s.sol";
-import {CREATE3Factory} from "../src/Create3Factory.sol";
+import {CREATE3Factory} from "../src/CREATE3Factory.sol";
 
 contract Deploy is Common {
     using stdJson for string;
