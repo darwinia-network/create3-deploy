@@ -1,4 +1,4 @@
-.PHONY: all fmt clean test salt
+.PHONY: all fmt clean test salt install
 .PHONY: tools foundry sync verify
 
 -include .env
@@ -8,7 +8,7 @@ fmt    :; @forge fmt
 clean  :; @forge clean
 test   :; @forge test
 deploy :; @forge script script/Deploy.s.sol:Deploy --chain-id ${chain-id} --broadcast --verify
-
+install:; @cargo install --path ./cli
 sync   :; @git submodule update --recursive
 
 tools  :  foundry
