@@ -2,7 +2,7 @@ use cast::SimpleCast;
 use clap::Parser;
 use ethers::{
     core::rand::thread_rng,
-    types::{Address, Bytes, H256, U256},
+    types::{Address, Bytes, H256},
     utils::{get_create2_address_from_hash, keccak256},
 };
 use eyre::{Result, WrapErr};
@@ -57,7 +57,7 @@ pub struct Create3 {
 #[allow(dead_code)]
 pub struct Create3Output {
     pub address: Address,
-    pub salt: U256,
+    pub salt: H256,
 }
 
 impl Create3 {
@@ -144,11 +144,11 @@ impl Create3 {
             })
             .unwrap();
 
-        let salt = U256::from(salt.to_vec().as_slice());
+        let salt = H256::from_slice(salt.to_vec().as_slice());
         let address = Address::from_str(&addr).unwrap();
 
         println!(
-            "Successfully found contract address in {} seconds.\nAddress: {}\nSalt: {}",
+            "Successfully found contract address in {} seconds.\nAddress: {}\nSalt: {:?}",
             timer.elapsed().as_secs(),
             addr,
             salt
