@@ -1,5 +1,5 @@
-.PHONY: all fmt clean test
-.PHONY: tools foundry sync salt
+.PHONY: all fmt clean test salt
+.PHONY: tools foundry sync verify
 
 -include .env
 
@@ -15,3 +15,4 @@ tools  :  foundry
 foundry:; curl -L https://foundry.paradigm.xyz | bash
 
 salt   :; @bash ./bin/salt.sh
+verify :; @./bin/verify.sh
