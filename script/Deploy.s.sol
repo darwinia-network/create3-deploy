@@ -10,8 +10,8 @@ import {CREATE3Factory} from "../src/CREATE3Factory.sol";
 contract Deploy is Common {
     using stdJson for string;
 
-    address immutable ADDR = 0x009dE19E34bEcDF5712f65526d8B94699B3dbD3c;
-    bytes32 immutable SALT = 0x548e32bb34689c11111a919c23632943df0c003b96eebe84a7bcdcb8fd50261b;
+    address immutable ADDR = 0x00b8848A3ee03CfD770037913D8e7722021F6a46;
+    bytes32 immutable SALT = 0x57ce4c47260474f72b92f84772456a57f4035bae112d62e86a07ef225dded39b;
 
     function name() public pure override returns (string memory) {
         return "Deploy";
