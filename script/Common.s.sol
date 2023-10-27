@@ -54,7 +54,7 @@ abstract contract Common is Script {
 
     function _deploy2(bytes32 salt, bytes memory initCode) internal returns (address) {
         bytes memory data = bytes.concat(salt, initCode);
-        (, bytes memory addr) = SAFE_CREATE2_ADDR.call{gas: 2000000}(data);
+        (, bytes memory addr) = SAFE_CREATE2_ADDR.call(data);
         return address(uint160(bytes20(addr)));
     }
 
