@@ -13,7 +13,7 @@ abstract contract Common is Script {
     using Chains for uint256;
 
     address immutable SAFE_CREATE2_ADDR = 0x914d7Fec6aaC8cd542e72Bca78B30650d45643d7;
-    address immutable CREATE3_FACTORY_ADDR = 0x009dE19E34bEcDF5712f65526d8B94699B3dbD3c;
+    address immutable CREATE3_FACTORY_ADDR = 0x0000000000C76fe1798a428F60b27c6724e03408;
 
     /// @notice Modifier that wraps a function in broadcasting.
     modifier broadcast() {
