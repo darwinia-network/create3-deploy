@@ -39,7 +39,7 @@ pub struct Create3 {
     #[clap(
         short,
         long,
-        default_value = "0x009dE19E34bEcDF5712f65526d8B94699B3dbD3c",
+        default_value = "0x0000000000C76fe1798a428F60b27c6724e03408",
         value_name = "ADDRESS"
     )]
     factory: Address,
