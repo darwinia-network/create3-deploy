@@ -13,6 +13,8 @@ auto_detect_remappings = false
 [rpc_endpoints]
 arbitrum-goerli = "https://goerli-rollup.arbitrum.io/rpc"
 arbitrum-sepolia = "https://sepolia-rollup.arbitrum.io/rpc"
+goerli = "https://rpc.ankr.com/eth_goerli"
+sepolia = "https://rpc.ankr.com/eth_sepolia"
 pangolin = "https://pangolin-rpc.darwinia.network"
 crab = "https://crab-rpc.darwinia.network"
 
