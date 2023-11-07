@@ -51,4 +51,17 @@ library Chains {
             return vm.toString(chainid);
         }
     }
+
+    function isL2(uint256 chainid) internal pure returns (bool) {
+        if (chainid == Optimism ||
+            chainid == OptimismGoerli ||
+            chainid == OptimismSepolia ||
+            chainid == Arbitrum ||
+            chainid == ArbitrumGoerli ||
+            chainid == ArbitrumSepolia) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
