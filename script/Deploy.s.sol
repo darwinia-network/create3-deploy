@@ -12,6 +12,7 @@ contract Deploy is Common {
 
     address immutable ADDR = 0x0000000000C76fe1798a428F60b27c6724e03408;
     bytes32 immutable SALT = 0xbdfe2ef43e1e3ce6492866175ab332d54a06ed033ec746975e32aa0c45dbbce0;
+
     function name() public pure override returns (string memory) {
         return "Deploy";
     }
