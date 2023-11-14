@@ -19,8 +19,10 @@ pangolin = "https://pangolin-rpc.darwinia.network"
 crab = "https://crab-rpc.darwinia.network"
 darwinia = "https://rpc.darwinia.network"
 arbitrum = "https://arb1.arbitrum.io/rpc"
+polygon = "https://polygon-rpc.com"
 
 [etherscan]
+polygon = { key = "${ETHERSCAN_POLYGON_KEY}"}
 arbitrum = { key = "${ETHERSCAN_ARBITRUM_KEY}" }
 arbitrum-goerli = { key = "${ETHERSCAN_ARBITRUM_KEY}" }
 arbitrum-sepolia = { key = "${ETHERSCAN_ARBITRUM_KEY}" }

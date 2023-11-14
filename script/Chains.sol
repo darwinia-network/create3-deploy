@@ -12,8 +12,12 @@ library Chains {
     uint256 internal constant Crab = 44;
     uint256 internal constant Pangoro = 45;
     uint256 internal constant Darwinia = 46;
+    uint256 internal constant Polygon = 137;
+    uint256 internal constant Zksync = 324;
     uint256 internal constant OptimismGoerli = 420;
+    uint256 internal constant Mantle = 5000;
     uint256 internal constant Arbitrum = 42161;
+    uint256 internal constant Mumbai = 80001;
     uint256 internal constant ArbitrumGoerli = 421613;
     uint256 internal constant ArbitrumSepolia = 421614;
     uint256 internal constant Sepolia = 11155111;
@@ -35,10 +39,18 @@ library Chains {
             return "pangoro";
         } else if (chainid == Darwinia) {
             return "darwinia";
+        } else if (chainid == Polygon) {
+            return "polygon";
+        } else if (chainid == Zksync) {
+            return "zksync";
         } else if (chainid == OptimismGoerli) {
             return "optimism-goerli";
+        } else if (chainid == Mantle) {
+            return "mantle";
         } else if (chainid == Arbitrum) {
             return "arbitrum";
+        } else if (chainid == Mumbai) {
+            return "mumbai";
         } else if (chainid == ArbitrumGoerli) {
             return "arbitrum-goerli";
         } else if (chainid == ArbitrumSepolia) {
@@ -55,7 +67,7 @@ library Chains {
     function isL2(uint256 chainid) internal pure returns (bool) {
         if (
             chainid == Optimism || chainid == OptimismGoerli || chainid == OptimismSepolia || chainid == Arbitrum
-                || chainid == ArbitrumGoerli || chainid == ArbitrumSepolia
+                || chainid == ArbitrumGoerli || chainid == ArbitrumSepolia || chainid == Mantle || chainid == Zksync
         ) {
             return true;
         } else {
