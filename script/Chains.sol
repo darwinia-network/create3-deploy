@@ -68,6 +68,7 @@ library Chains {
         if (
             chainid == Optimism || chainid == OptimismGoerli || chainid == OptimismSepolia || chainid == Arbitrum
                 || chainid == ArbitrumGoerli || chainid == ArbitrumSepolia || chainid == Mantle || chainid == Zksync
+                || chainid == Polygon
         ) {
             return true;
         } else {
