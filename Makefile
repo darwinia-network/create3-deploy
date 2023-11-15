@@ -7,7 +7,7 @@ all    :; @forge build --force
 fmt    :; @forge fmt
 clean  :; @forge clean
 test   :; @forge test
-deploy :; @forge script script/Deploy.s.sol:Deploy --chain-id ${chain-id} --broadcast --verify
+deploy :; @forge script script/Deploy.s.sol:Deploy --chain-id ${chain-id} --legacy --broadcast --verify
 install:; @cargo install --path ./cli
 sync   :; @git submodule update --recursive
 
