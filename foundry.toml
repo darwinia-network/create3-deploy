@@ -8,7 +8,7 @@ evm_version = "london"
 optimizer = true
 optimizer_runs = 999999
 bytecode_hash = "none"
-use_literal_content = true
+# use_literal_content = true
 auto_detect_remappings = false
 
 [rpc_endpoints]
