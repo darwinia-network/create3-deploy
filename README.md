@@ -16,5 +16,6 @@ CREATE3Factory:
 - arbitrum
 - crab
 - darwinia
+- ethereum
 - polygon
 - mantle

@@ -1,15 +1,12 @@
-# Compiler files
-cache/
-out/
-
-# Ignores development broadcast logs
-/broadcast
-
-# Docs
-docs/
-
-# Dotenv file
 .env
-
-debug/
-target/
+.DS_Store
+/target
+/docs
+/out
+/cache
+/artifacts
+/broadcast
+deployments/*/.deploy
+/script/output/*/*.json
+!/script/output/*/*-latest.json
+!/script/output/*/*.v.json
