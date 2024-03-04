@@ -23,8 +23,10 @@ arbitrum = "https://arb1.arbitrum.io/rpc"
 polygon = "https://polygon-rpc.com"
 ethereum = "https://mainnet.infura.io/v3/${INFURA_KEY}"
 mantle = "https://rpc.mantle.xyz"
+blast = "https://rpc.blast.io"
 
 [etherscan]
+blast = { key = "${ETHERSCAN_BLAST_KEY}", url = "https://api.blastscan.io/api"}
 ethereum = { key = "${ETHERSCAN_API_KEY}" }
 polygon = { key = "${ETHERSCAN_POLYGON_KEY}" }
 arbitrum = { key = "${ETHERSCAN_ARBITRUM_KEY}" }

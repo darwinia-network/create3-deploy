@@ -14,6 +14,7 @@ CREATE3Factory:
 
 ### Support Chains
 - arbitrum
+- blast
 - crab
 - darwinia
 - ethereum

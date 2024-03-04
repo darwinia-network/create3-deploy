@@ -18,6 +18,7 @@ library Chains {
     uint256 internal constant Mantle = 5000;
     uint256 internal constant Arbitrum = 42161;
     uint256 internal constant Mumbai = 80001;
+	uint256 internal constant Blast = 81457;
     uint256 internal constant ArbitrumGoerli = 421613;
     uint256 internal constant ArbitrumSepolia = 421614;
     uint256 internal constant Sepolia = 11155111;
@@ -51,6 +52,8 @@ library Chains {
             return "arbitrum";
         } else if (chainid == Mumbai) {
             return "mumbai";
+        } else if (chainid == Blast) {
+            return "blast";
         } else if (chainid == ArbitrumGoerli) {
             return "arbitrum-goerli";
         } else if (chainid == ArbitrumSepolia) {
@@ -68,7 +71,7 @@ library Chains {
         if (
             chainid == Optimism || chainid == OptimismGoerli || chainid == OptimismSepolia || chainid == Arbitrum
                 || chainid == ArbitrumGoerli || chainid == ArbitrumSepolia || chainid == Mantle || chainid == Zksync
-                || chainid == Polygon
+                || chainid == Polygon || chainid == Blast
         ) {
             return true;
         } else {
