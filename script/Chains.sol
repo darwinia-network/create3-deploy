@@ -18,7 +18,7 @@ library Chains {
     uint256 internal constant Mantle = 5000;
     uint256 internal constant Arbitrum = 42161;
     uint256 internal constant Mumbai = 80001;
-	uint256 internal constant Blast = 81457;
+    uint256 internal constant Blast = 81457;
     uint256 internal constant ArbitrumGoerli = 421613;
     uint256 internal constant ArbitrumSepolia = 421614;
     uint256 internal constant Sepolia = 11155111;
@@ -68,14 +68,10 @@ library Chains {
     }
 
     function isL2(uint256 chainid) internal pure returns (bool) {
-        if (
-            chainid == Optimism || chainid == OptimismGoerli || chainid == OptimismSepolia || chainid == Arbitrum
-                || chainid == ArbitrumGoerli || chainid == ArbitrumSepolia || chainid == Mantle || chainid == Zksync
-                || chainid == Polygon || chainid == Blast
-        ) {
-            return true;
-        } else {
+        if (chainid == Ethereum) {
             return false;
+        } else {
+            return true;
         }
     }
 }
