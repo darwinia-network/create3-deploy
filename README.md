@@ -20,3 +20,4 @@ CREATE3Factory:
 - ethereum
 - polygon
 - mantle
+- optimism
