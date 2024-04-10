@@ -16,6 +16,7 @@ library Chains {
     uint256 internal constant Zksync = 324;
     uint256 internal constant OptimismGoerli = 420;
     uint256 internal constant Mantle = 5000;
+	uint256 internal constant Base = 8453;
     uint256 internal constant Arbitrum = 42161;
     uint256 internal constant Mumbai = 80001;
     uint256 internal constant Blast = 81457;
@@ -48,6 +49,8 @@ library Chains {
             return "optimism-goerli";
         } else if (chainid == Mantle) {
             return "mantle";
+        } else if (chainid == Base) {
+            return "base";
         } else if (chainid == Arbitrum) {
             return "arbitrum";
         } else if (chainid == Mumbai) {

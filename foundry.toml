@@ -25,6 +25,7 @@ ethereum = "https://mainnet.infura.io/v3/${INFURA_KEY}"
 mantle = "https://rpc.mantle.xyz"
 blast = "https://rpc.blast.io"
 optimism = "https://optimism-mainnet.infura.io/v3/${INFURA_KEY}"
+base = "https://mainnet.base.org"
 
 [etherscan]
 blast = { key = "${ETHERSCAN_BLAST_KEY}", url = "https://api.blastscan.io/api"}
@@ -37,3 +38,4 @@ darwinia = { key = "${ETHERSCAN_DARWINIA_KEY}", url = "https://darwinia.api.subs
 pangolin = { key = "${ETHERSCAN_DARWINIA_KEY}", url = "https://pangolin.api.subscan.io/api/scan/evm/contract/verifysource" }
 crab = { key = "${ETHERSCAN_DARWINIA_KEY}", url = "https://crab.api.subscan.io/api/scan/evm/contract/verifysource" }
 optimism = { key = "${ETHERSCAN_OPTIMISM_KEY}" }
+base = { key = "${ETHERSCAN_BASE_KEY}" }
