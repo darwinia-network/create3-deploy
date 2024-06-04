@@ -22,6 +22,7 @@ library Chains {
     uint256 internal constant Blast = 81457;
     uint256 internal constant ArbitrumGoerli = 421613;
     uint256 internal constant ArbitrumSepolia = 421614;
+	uint256 internal constant Scroll = 534352; 
     uint256 internal constant Sepolia = 11155111;
     uint256 internal constant OptimismSepolia = 11155420;
     Vm constant vm = Vm(address(bytes20(uint160(uint256(keccak256("hevm cheat code"))))));
@@ -61,6 +62,8 @@ library Chains {
             return "arbitrum-goerli";
         } else if (chainid == ArbitrumSepolia) {
             return "arbitrum-sepolia";
+        } else if (chainid == Scroll) {
+            return "scroll";
         } else if (chainid == Sepolia) {
             return "sepolia";
         } else if (chainid == OptimismSepolia) {

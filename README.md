@@ -21,3 +21,5 @@ CREATE3Factory:
 - polygon
 - mantle
 - optimism
+- base
+- scroll

@@ -26,6 +26,7 @@ mantle = "https://rpc.mantle.xyz"
 blast = "https://rpc.blast.io"
 optimism = "https://optimism-mainnet.infura.io/v3/${INFURA_KEY}"
 base = "https://mainnet.base.org"
+scroll = "https://rpc.scroll.io"
 
 [etherscan]
 blast = { key = "${ETHERSCAN_BLAST_KEY}", url = "https://api.blastscan.io/api"}
