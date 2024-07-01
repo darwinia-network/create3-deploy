@@ -16,13 +16,14 @@ library Chains {
     uint256 internal constant Zksync = 324;
     uint256 internal constant OptimismGoerli = 420;
     uint256 internal constant Mantle = 5000;
-	uint256 internal constant Base = 8453;
+    uint256 internal constant Base = 8453;
     uint256 internal constant Arbitrum = 42161;
     uint256 internal constant Mumbai = 80001;
     uint256 internal constant Blast = 81457;
+    uint256 internal constant BaseSepolia = 84532;
     uint256 internal constant ArbitrumGoerli = 421613;
     uint256 internal constant ArbitrumSepolia = 421614;
-	uint256 internal constant Scroll = 534352; 
+    uint256 internal constant Scroll = 534352;
     uint256 internal constant Sepolia = 11155111;
     uint256 internal constant OptimismSepolia = 11155420;
     Vm constant vm = Vm(address(bytes20(uint160(uint256(keccak256("hevm cheat code"))))));
@@ -58,6 +59,8 @@ library Chains {
             return "mumbai";
         } else if (chainid == Blast) {
             return "blast";
+        } else if (chainid == BaseSepolia) {
+            return "base-sepolia";
         } else if (chainid == ArbitrumGoerli) {
             return "arbitrum-goerli";
         } else if (chainid == ArbitrumSepolia) {
