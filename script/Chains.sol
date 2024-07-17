@@ -8,13 +8,13 @@ library Chains {
     uint256 internal constant Ethereum = 1;
     uint256 internal constant Goerli = 5;
     uint256 internal constant Optimism = 10;
-    uint256 internal constant Pangolin = 43;
     uint256 internal constant Crab = 44;
     uint256 internal constant Pangoro = 45;
     uint256 internal constant Darwinia = 46;
     uint256 internal constant Polygon = 137;
     uint256 internal constant Zksync = 324;
     uint256 internal constant OptimismGoerli = 420;
+    uint256 internal constant Koi = 701;
     uint256 internal constant Mantle = 5000;
     uint256 internal constant Base = 8453;
     uint256 internal constant Arbitrum = 42161;
@@ -35,8 +35,6 @@ library Chains {
             return "goerli";
         } else if (chainid == Optimism) {
             return "optimism";
-        } else if (chainid == Pangolin) {
-            return "pangolin";
         } else if (chainid == Crab) {
             return "crab";
         } else if (chainid == Pangoro) {
@@ -49,6 +47,8 @@ library Chains {
             return "zksync";
         } else if (chainid == OptimismGoerli) {
             return "optimism-goerli";
+        } else if (chainid == Koi) {
+            return "koi";
         } else if (chainid == Mantle) {
             return "mantle";
         } else if (chainid == Base) {
