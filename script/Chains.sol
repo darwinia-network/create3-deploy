@@ -11,6 +11,8 @@ library Chains {
     uint256 internal constant Crab = 44;
     uint256 internal constant Pangoro = 45;
     uint256 internal constant Darwinia = 46;
+	uint256 internal constant BSC = 56;
+	uint256 internal constant Gnosis = 100;
     uint256 internal constant Polygon = 137;
     uint256 internal constant Zksync = 324;
     uint256 internal constant OptimismGoerli = 420;
@@ -18,6 +20,7 @@ library Chains {
     uint256 internal constant Mantle = 5000;
     uint256 internal constant Base = 8453;
     uint256 internal constant Arbitrum = 42161;
+	uint256 internal constant Avalanche = 43114;
     uint256 internal constant Mumbai = 80001;
     uint256 internal constant Blast = 81457;
     uint256 internal constant BaseSepolia = 84532;
@@ -41,6 +44,10 @@ library Chains {
             return "pangoro";
         } else if (chainid == Darwinia) {
             return "darwinia";
+        } else if (chainid == BSC) {
+            return "bsc";
+        } else if (chainid == Gnosis) {
+            return "gnosis";
         } else if (chainid == Polygon) {
             return "polygon";
         } else if (chainid == Zksync) {
@@ -55,6 +62,8 @@ library Chains {
             return "base";
         } else if (chainid == Arbitrum) {
             return "arbitrum";
+        } else if (chainid == Avalanche) {
+            return "avalanche";
         } else if (chainid == Mumbai) {
             return "mumbai";
         } else if (chainid == Blast) {

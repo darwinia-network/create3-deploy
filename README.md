@@ -23,3 +23,6 @@ CREATE3Factory:
 - optimism
 - base
 - scroll
+- bsc
+- gnosis
+- avalanche

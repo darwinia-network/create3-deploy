@@ -12,6 +12,9 @@ bytecode_hash = "none"
 auto_detect_remappings = false
 
 [rpc_endpoints]
+avalanche = "https://rpc.ankr.com/avalanche"
+gnosis = "https://rpc.ankr.com/gnosis"
+bsc = "https://rpc.ankr.com/bsc"
 arbitrum-goerli = "https://goerli-rollup.arbitrum.io/rpc"
 arbitrum-sepolia = "https://sepolia-rollup.arbitrum.io/rpc"
 goerli = "https://rpc.ankr.com/eth_goerli"
