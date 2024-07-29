@@ -26,3 +26,5 @@ CREATE3Factory:
 - bsc
 - gnosis
 - avalanche
+- astar-zkevm
+- linea
