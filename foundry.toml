@@ -31,6 +31,9 @@ optimism = "https://optimism-mainnet.infura.io/v3/${INFURA_KEY}"
 base = "https://mainnet.base.org"
 base-sepolia = "https://sepolia.base.org"
 scroll = "https://rpc.scroll.io"
+moonbeam = "https://rpc.api.moonbeam.network"
+linea = "https://1rpc.io/linea"
+astar = "https://rpc.startale.com/astar-zkevm"
 
 [etherscan]
 blast = { key = "${ETHERSCAN_BLAST_KEY}", url = "https://api.blastscan.io/api"}
@@ -45,3 +48,4 @@ crab = { key = "${ETHERSCAN_DARWINIA_KEY}", url = "https://crab.api.subscan.io/a
 optimism = { key = "${ETHERSCAN_OPTIMISM_KEY}" }
 base = { key = "${ETHERSCAN_BASE_KEY}" }
 base-sepolia = { key = "${ETHERSCAN_BASE_KEY}" }
+astar = { key = "${ETHERSCAN_API_KEY}"}

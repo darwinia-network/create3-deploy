@@ -17,10 +17,13 @@ library Chains {
     uint256 internal constant Zksync = 324;
     uint256 internal constant OptimismGoerli = 420;
     uint256 internal constant Koi = 701;
+	uint256 internal constant Moonbeam = 1284;
+	uint256 internal constant Astar = 3776;
     uint256 internal constant Mantle = 5000;
     uint256 internal constant Base = 8453;
     uint256 internal constant Arbitrum = 42161;
 	uint256 internal constant Avalanche = 43114;
+	uint256 internal constant Linea = 59144;
     uint256 internal constant Mumbai = 80001;
     uint256 internal constant Blast = 81457;
     uint256 internal constant BaseSepolia = 84532;
@@ -56,6 +59,10 @@ library Chains {
             return "optimism-goerli";
         } else if (chainid == Koi) {
             return "koi";
+        } else if (chainid == Moonbeam) {
+            return "moonbeam";
+        } else if (chainid == Astar) {
+            return "astar";
         } else if (chainid == Mantle) {
             return "mantle";
         } else if (chainid == Base) {
@@ -64,6 +71,8 @@ library Chains {
             return "arbitrum";
         } else if (chainid == Avalanche) {
             return "avalanche";
+        } else if (chainid == Linea) {
+            return "linea";
         } else if (chainid == Mumbai) {
             return "mumbai";
         } else if (chainid == Blast) {
