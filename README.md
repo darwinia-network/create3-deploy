@@ -28,3 +28,4 @@ CREATE3Factory:
 - avalanche
 - astar-zkevm
 - linea
+- zircuit

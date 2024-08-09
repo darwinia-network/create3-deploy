@@ -23,6 +23,7 @@ library Chains {
     uint256 internal constant Base = 8453;
     uint256 internal constant Arbitrum = 42161;
 	uint256 internal constant Avalanche = 43114;
+	uint256 internal constant Zircuit = 48900;
 	uint256 internal constant Linea = 59144;
     uint256 internal constant Mumbai = 80001;
     uint256 internal constant Blast = 81457;
@@ -73,6 +74,8 @@ library Chains {
             return "avalanche";
         } else if (chainid == Linea) {
             return "linea";
+        } else if (chainid == Zircuit) {
+            return "zircuit";
         } else if (chainid == Mumbai) {
             return "mumbai";
         } else if (chainid == Blast) {

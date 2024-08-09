@@ -34,6 +34,7 @@ scroll = "https://rpc.scroll.io"
 moonbeam = "https://rpc.api.moonbeam.network"
 linea = "https://1rpc.io/linea"
 astar = "https://rpc.startale.com/astar-zkevm"
+zircuit = "https://zircuit1-mainnet.p2pify.com"
 
 [etherscan]
 blast = { key = "${ETHERSCAN_BLAST_KEY}", url = "https://api.blastscan.io/api"}
