@@ -18,6 +18,7 @@ library Chains {
     uint256 internal constant OptimismGoerli = 420;
     uint256 internal constant Koi = 701;
 	uint256 internal constant Moonbeam = 1284;
+	uint256 internal constant Morph = 2818;
 	uint256 internal constant Astar = 3776;
     uint256 internal constant Mantle = 5000;
     uint256 internal constant Base = 8453;
@@ -62,6 +63,8 @@ library Chains {
             return "koi";
         } else if (chainid == Moonbeam) {
             return "moonbeam";
+        } else if (chainid == Morph) {
+            return "morph";
         } else if (chainid == Astar) {
             return "astar";
         } else if (chainid == Mantle) {

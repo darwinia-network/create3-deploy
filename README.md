@@ -29,3 +29,4 @@ CREATE3Factory:
 - astar-zkevm
 - linea
 - zircuit
+- morph
